@@ -1,0 +1,14 @@
+<h2> Dodawanie nowego posta </h2>
+
+<%= form_for @post do |f| %>
+  <div>
+    <%= f.label :author, "Autor" %>
+    <%= f.text_field :author %>
+  </div>
+  <div>
+    <%= f.label :body, "Tresc" %>
+    <%= f.text_field :body %>
+  </div>
+
+  <%= f.submit "Dodaj wpis" %>
+<% end %>

@@ -1,0 +1,13 @@
+<h3>
+  Witaj w ksiedze gosci uczestinkow warsztatow z tworzenia prostych aplikacji webowych przy uzyciu Ruby on Rails!
+</h3>
+<p>
+  <%= link_to "Dodaj wlasny wpis juz teraz.", new_post_path %>
+</p>
+
+<% @posts.each do |post| %>
+  <blockquote>
+    <h4><%= post.body %></h4>
+    <footer><cite><%= post.author %></cite></footer>
+  </blockquote>
+<% end %>
